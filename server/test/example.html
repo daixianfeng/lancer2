@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>example</title>
+</head>
+<body>
+    <form action="/api/passport/login.json" method="post">
+        <input type="text" name="username" placeholder="用户名">
+        <input type="password" name="password" placeholder="密码">
+        <button type="submit">登录</button>
+    </form>
+    <form action="/api/passport/register.json" method="post">
+        <input type="text" name="username" placeholder="用户名（手机号）">
+        <input type="text" name="nickname" placeholder="昵称">
+        <input type="password" name="password" placeholder="密码">
+        <button type="submit">注册</button>
+    </form>
+    <form action="/api/video/share.json" method="post">
+        <input type="text" name="link" placeholder="视频链接">
+        <input type="text" name="title" placeholder="标题">
+        <input type="text" name="tags" placeholder="标签（ ; 分隔）">
+        <label>是否公开</label><input type="checkbox" name="isOpen">
+        <button type="submit">分享视频</button>
+    </form>
+</body>
+
+</html>

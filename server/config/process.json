@@ -1,0 +1,18 @@
+{
+  "apps" : [{
+    "name": "rss",
+    "script": "./src/app.js",
+    "cwd": "/Users/daixianfeng/todo/svs/server",
+    "error_file": "./log/ps-error/current.log",
+    "out_file": "./log/ps-log/current.log",
+    "watch": true,
+    "ignore_watch" : ["node_modules", "log"],
+    "node_args": "-r esm --experimental-modules",
+    "env": {
+      "NODE_ENV": "development"
+    },
+    "env_production": {
+       "NODE_ENV": "production"
+    }
+  }]
+}
